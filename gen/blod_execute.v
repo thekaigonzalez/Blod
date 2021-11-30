@@ -1,8 +1,10 @@
-// import os
+
+import readline
 
 fn main() {
 	// mut a := 1
-	execv_blod("print( (),  (1,2) , `hello, world`)")
+	mut reader := readline.Readline{}
+	execv_blod(reader.read_line("type expresion : ") ?)
 }
 
 fn execv_blod(code string) {
